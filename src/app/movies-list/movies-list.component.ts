@@ -11,6 +11,10 @@ export class MoviesListComponent implements OnInit {
   @Input() movies: Movie[];
   @Input() name: string;
 
+newTitle: string;
+newCatagory: string;
+newYear: number;
+
   constructor() { 
 
   }
@@ -21,5 +25,9 @@ export class MoviesListComponent implements OnInit {
   details(movie: Movie) {
     alert(`details for ${movie.title}`);
   }
+addMovie(){
+  let movie = new Movie(this.newTitle, this.newCatagory, this.newYear);
+  this.movies.push(movie);
 
+}
 }
