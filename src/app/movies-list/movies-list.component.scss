@@ -1,0 +1,15 @@
+$font-stack: Courier;
+$primary-color: yellow;
+
+li {
+    padding-bottom: 20px;
+    font: 120% $font-stack;
+}
+
+.comedy {
+    color: $primary-color;
+}
+
+.clickable {
+    cursor: pointer;
+}
